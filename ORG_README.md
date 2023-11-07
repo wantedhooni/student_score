@@ -1,10 +1,3 @@
-# {20231101} {원량훈}님
-
----
-- swagger-ui 주소 : http://localhost:8080/swagger-ui/index.html
-- H2 db 주소 : http://localhost:8080/h2-console
-
-
 ---
 
 ## 주의 사항

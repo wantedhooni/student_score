@@ -1,11 +1,6 @@
-# {20231101} {원량훈}
-
----
 # 구동 방법
 
 ````
-git clone https://github.com/mathflat-dev/20231101_wantedhooni.git
-cd 20231101_wantedhooni
 ./gradlew clean && ./gradlew bootRun 
 ````
 
@@ -31,32 +26,6 @@ cd 20231101_wantedhooni
 (비지니스 로직) Endpoint <- (비지니스 로직) usecase <- (Domain) Serivce <- (Domain) Repository <- (Domain) Entity
 역의존 하지 않는다.
 
----
-# 패키지 구조
-````
-.
-└── com
-    └── revy
-        └── freewheelin
-            ├── common -> 공통 Resource
-            │   ├── enums -> 공통 Enum 모음 패키지 
-            │   └── exception -> 공통 Exception 모음 패키지
-            ├── endpoint ->  Controller
-            │   ├── common -> Conroller 공통 패키지(ExceptionHandler)
-            │   ├── req -> Request DTO
-            │   └── res -> Response DTO
-            ├── infra
-            │   └── config -> BeanConfig 
-            ├── model -> Entity 레이어 패키지
-            │   ├── score 
-            │   ├── student
-            │   └── subject
-            └── usecase -> 비지니스 서비스 패키지
-                ├── dto
-                └── impl
-
-
-````
 ---
 # ERD
 
