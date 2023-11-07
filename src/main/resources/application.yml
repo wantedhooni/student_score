@@ -1,0 +1,36 @@
+
+
+spring:
+#   MariaDB
+#  datasource:
+#    driver-class-name: org.mariadb.jdbc.Driver
+#    url: jdbc:mariadb://localhost:3306/freewheelin
+#    username: root
+#    password: 1234
+  # H2 DB
+  datasource:
+    driver-class-name: org.h2.Driver
+    url: jdbc:h2:mem:db;MODE=MYSQL
+    username: sa
+    password:
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    #      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        format_sql: false
+    open-in-view: false
+
+  devtools:
+    restart:
+      enabled: false
+    livereload:
+      enabled: true
+server:
+  port: 8080
